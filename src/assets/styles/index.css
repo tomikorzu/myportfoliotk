@@ -59,6 +59,17 @@ main {
   transition: all 0.4s;
 }
 
+header{
+
+}
+.fixed-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 div {
   display: flex;
   flex-direction: column;

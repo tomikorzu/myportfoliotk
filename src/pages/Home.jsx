@@ -6,12 +6,16 @@ const Home = () => {
   return (
     <>
       <div className="back-drop">
-        <NavbarMenu
-          items={[
-            { item: "", url: "/" },
-            { item: "", url: "/" },
-          ]}
-        />
+        <header className="fade-in fixed-header">
+          <NavbarMenu
+            items={[
+              { item: "Home", url: "/", active: true },
+              { item: "About Me", url: "/About" },
+              { item: "Projects", url: "/Projects" },
+              { item: "Contact", url: "/Contact" },
+            ]}
+          />
+        </header>
         <main className="fade-in"></main>
       </div>
     </>
