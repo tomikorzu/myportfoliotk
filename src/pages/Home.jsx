@@ -7,7 +7,7 @@ import { redirectPage } from "../utils/mainFunctions.js";
 const Home = () => {
   useEffect(() => {
     const homeBtn = document.getElementById("home-btn");
-    homeBtn.addEventListener("click", () => redirectPage('/projects', 'fade-out', 500));
+    homeBtn.addEventListener("click", () => redirectPage('/about', 'fade-out', 500));
   }, []);
   return (
     <>
@@ -29,7 +29,7 @@ const Home = () => {
               <h1 className="home-title">Tomás Korzusehec</h1>
               <h4 className="home-subtitle">Front End Developer</h4>
               <button className="home-btn" id="home-btn">
-                My Projects
+                About Me
               </button>
             </div>
           </div>
