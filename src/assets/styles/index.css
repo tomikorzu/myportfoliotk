@@ -31,6 +31,7 @@
   --navbar-desplegable-btn: #8098c5;
   --navbar-items-color: #000;
   --navbar-toggle-lines-color: #111;
+  --copy-footer-color: #00000070;
 }
 
 /* General tags */
@@ -60,7 +61,7 @@ main {
 }
 
 header{
-
+  z-index: 10;
 }
 .fixed-header{
   position: fixed;
@@ -68,6 +69,19 @@ header{
   left: 0;
   right: 0;
   bottom: 0;
+}
+.copyright-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--copy-footer-color);
+  font-size: 14px;
+  text-align: center;
+  font-weight: 550;
 }
 
 div {
