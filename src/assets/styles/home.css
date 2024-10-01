@@ -21,6 +21,15 @@
 .home-btn {
   margin-top: 5px;
 }
+.btn-link{
+    border-radius: 100%;
+}
+.btn-link i {
+    font-size: 1.25em;
+}
+.btn-container{
+    margin: 5px 0;
+}
 .left-part {
 }
 .my-photo {

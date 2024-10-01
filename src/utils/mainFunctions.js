@@ -1,11 +1,14 @@
 const body = document.querySelector("body");
 
-
 export function redirectPage(url, className, time) {
   body.classList.add(`${className}`);
   setTimeout(() => {
     window.location.href = url;
   }, time);
+}
+
+export function goToExternalPage(url) {
+  window.open(url);
 }
 
 export function userAlert(title, message) {
