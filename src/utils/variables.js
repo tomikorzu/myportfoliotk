@@ -121,7 +121,7 @@ const personalData = {
     { language: "English", level: "Intermediate(B2)" },
   ],
 };
-export const allData = [
+const allData = [
   textAboutMe,
   skillsSet,
   education,
@@ -131,3 +131,5 @@ export const allData = [
   projects,
   personalData,
 ];
+
+export default allData;

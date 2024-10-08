@@ -34,26 +34,26 @@ const Home = () => {
             { item: "Contact", url: "/Contact" },
           ]}
         />
-        <main>
+        <main className="main-center">
           <div className="home-container">
-            <div className="left-part">
+            <div className="left-part div-center">
               <img className="my-photo" src={myPhoto} alt="me" />
             </div>
-            <div className="right-part">
+            <div className="right-part div-center">
               <h1 className="home-title">Tomás Korzusehec</h1>
               <h4 className="home-subtitle">Front End Developer</h4>
               <div className="btn-container">
-                <button className="btn-link" id="github-btn">
+                <button className="btn-link btn" id="github-btn">
                   <i className="fa-brands fa-github"></i>
                 </button>
-                <button className="btn-link" id="linkedin-btn">
+                <button className="btn-link btn" id="linkedin-btn">
                   <i className="fa-brands fa-linkedin"></i>
                 </button>
-                <button className="btn-link" id="mail-btn">
+                <button className="btn-link btn" id="mail-btn">
                   <i className="fa-solid fa-envelope"></i>
                 </button>
               </div>
-              <button className="home-btn" id="home-btn">
+              <button className="home-btn btn" id="home-btn">
                 About Me
               </button>
             </div>

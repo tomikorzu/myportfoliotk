@@ -52,7 +52,7 @@ body {
   font-family: var(--font-montserrat);
   scroll-behavior: smooth;
 }
-main {
+.main-center {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -61,31 +61,7 @@ main {
   transition: all 0.4s;
 }
 
-header{
-  z-index: 10;
-}
-.fixed-header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.copyright-footer{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  background-color: var(--copy-footer-color);
-  font-size: 14px;
-  text-align: center;
-  font-weight: 550;
-}
-
-div {
+.div-center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,22 +69,28 @@ div {
 }
 button {
   cursor: pointer;
-  border-radius: 10px;
   border: none;
-  padding: 10px;
-  background-color: var(--btn-color);
   font-weight: 600;
   transition: all 0.4s;
+}
+.btn {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--btn-color);
   color: var(--text-color);
 }
-.btn-container{
+.btn-link{
+  border-radius: 100%;
+  display: flex;
+}
+.btn-container {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
 /* Forms */
-form {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,7 +109,7 @@ form {
   gap: 15px;
   width: 100%;
 }
-input {
+.input {
   padding: 12.5px 10px;
   outline: none;
   border-radius: 10px;
@@ -138,7 +120,7 @@ input {
   font-size: 0.875em;
   width: 100%;
 }
-input::placeholder {
+.input::placeholder {
   color: var(--input-placeholder-color);
 }
 .form-btn {
@@ -160,11 +142,12 @@ input::placeholder {
 
 /* Blur */
 .back-drop {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  min-height: 100vh;
   transition: filter 0.4s;
   z-index: -1;
 }
@@ -189,14 +172,18 @@ input::placeholder {
   transform: translate(-50%, -50%);
 }
 .desplegable-button {
+  top: 15px;
+  left: 15px;
   position: fixed;
   border-radius: 100%;
-  padding: 10px;
+  padding: 12.5px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.4s;
   background-color: var(--despegable-btn-color);
+  color: var(--text-color);
+  font-size: 1.25em;
 }
 
 /* Only read menus */
@@ -226,6 +213,20 @@ input::placeholder {
 .cancel-btn {
   background-color: var(--alert-bg-color);
   color: var(--alert-text-color);
+}
+
+.copyright-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--copy-footer-color);
+  font-size: 14px;
+  text-align: center;
+  font-weight: 550;
 }
 
 /* Animations */
@@ -320,7 +321,7 @@ input::placeholder {
 
 /* mouseover transitions */
 @media (min-width: 1024px) {
-  button:hover {
+  .btn:hover {
     background-color: var(--btn-color-hover);
   }
   .cancel-btn:hover {
@@ -333,5 +334,8 @@ input::placeholder {
   .already-account-btn:hover {
     background-color: transparent;
     color: var(--text-color);
+  }
+  .desplegable-button:hover {
+    background-color: var(--navbar-desplegable-btn);
   }
 }

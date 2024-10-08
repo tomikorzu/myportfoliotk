@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import NavbarMenu from "../components/NavbarMenu";
-import { allData } from "../utils/variables.js";
+import allData from "../utils/variables.js";
 
 const About = () => {
   useEffect(() => {
@@ -28,6 +28,25 @@ const About = () => {
         <div>
           <h3>My Professional objective</h3>
           <h6 id="objective-professional-text"></h6>
+        </div>
+        <div>
+          <h3>My Skills</h3>
+          <div>
+            <h5>Programming Languages</h5>
+            <ul className="programming-languages">
+              {allData[1].languages.map((language, index) => {
+                return <li key={index}>{language}</li>;
+              })}
+            </ul>
+          </div>
+          <div>
+            <h5>Programming Libraries</h5>
+            <ul className="programming-libraries">
+              {allData[1].libraries.map((library, index) => {
+                return <li key={index}>{library}</li>;
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     </>
