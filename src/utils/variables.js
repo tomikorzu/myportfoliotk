@@ -75,6 +75,22 @@ const experience = [
     description: "Lorem",
     tecnologies: ["HTML", "CSS", "JavaScript", "Git"],
   },
+  {
+    name: "GM2Dev",
+    time: "Jun 2024 - Present",
+    degree: "Front End Developer",
+    logo: "",
+    description: "Lorem",
+    tecnologies: ["HTML", "CSS", "JavaScript", "Git"],
+  },
+  {
+    name: "sa",
+    time: "Jun 2024 - Present",
+    degree: "Front End Developer",
+    logo: "",
+    description: "Lorem",
+    tecnologies: ["HTML", "CSS", "JavaScript", "Git"],
+  },
 ];
 
 const links = {
