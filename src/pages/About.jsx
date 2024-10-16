@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import NavbarMenu from "../components/NavbarMenu";
 import allData from "../utils/variables.js";
+import { goToExternalPage } from "../utils/mainFunctions.js";
 import EducationExperienceCard from "../components/EducationExperienceCard.jsx";
 import "../assets/styles/about.css";
 
@@ -37,34 +38,33 @@ const About = () => {
           <section className="about-skills-container">
             <h2>My Skills</h2>
             <article>
-              <h3>Programming Languages</h3>
-              <ul className="programming-languages">
+              <h3>Programming skillset</h3>
+              <ul>
                 {allData[1].languages.map((language, index) => {
-                  return <li key={index}><img src={language} alt="Language" /></li>;
+                  return (
+                    <li
+                      key={index}
+                      onClick={() => goToExternalPage(language.url)}
+                    >
+                      {language.img && (
+                        <img src={language.img} alt="Language" />
+                      )}
+                      <p>{language.name}</p>
+                    </li>
+                  );
                 })}
               </ul>
             </article>
             <article>
-              <h3>Programming Libraries</h3>
-              <ul className="programming-libraries">
-                {allData[1].libraries.map((library, index) => {
-                  return <li key={index}><img src={library} alt="Library" /></li>;
-                })}
-              </ul>
-            </article>
-            <article>
-              <h3>Programming Frameworks</h3>
-              <ul className="programming-frameworks">
-                {allData[1].frameworks.map((framework, index) => {
-                  return <li key={index}><img src={framework} alt="Framework" /></li>;
-                })}
-              </ul>
-            </article>
-            <article>
-              <h3>Tools</h3>
-              <ul className="programming-tools">
-                {allData[1].tools.map((tools, index) => {
-                  return <li key={index}><img src={tools} alt="Tool" /></li>;
+              <h3>Tools I use</h3>
+              <ul>
+                {allData[1].tools.map((tool, index) => {
+                  return (
+                    <li key={index} onClick={() => goToExternalPage(tool.url)}>
+                      {tool.img && <img src={tool.img} alt="Tool" />}
+                      <p>{tool.name}</p>
+                    </li>
+                  );
                 })}
               </ul>
             </article>
