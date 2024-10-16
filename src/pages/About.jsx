@@ -40,7 +40,7 @@ const About = () => {
               <h3>Programming Languages</h3>
               <ul className="programming-languages">
                 {allData[1].languages.map((language, index) => {
-                  return <li key={index}>{language}</li>;
+                  return <li key={index}><img src={language} alt="Language" /></li>;
                 })}
               </ul>
             </article>
@@ -48,7 +48,7 @@ const About = () => {
               <h3>Programming Libraries</h3>
               <ul className="programming-libraries">
                 {allData[1].libraries.map((library, index) => {
-                  return <li key={index}>{library}</li>;
+                  return <li key={index}><img src={library} alt="Library" /></li>;
                 })}
               </ul>
             </article>
@@ -56,7 +56,7 @@ const About = () => {
               <h3>Programming Frameworks</h3>
               <ul className="programming-frameworks">
                 {allData[1].frameworks.map((framework, index) => {
-                  return <li key={index}>{framework}</li>;
+                  return <li key={index}><img src={framework} alt="Framework" /></li>;
                 })}
               </ul>
             </article>
@@ -64,7 +64,7 @@ const About = () => {
               <h3>Tools</h3>
               <ul className="programming-tools">
                 {allData[1].tools.map((tools, index) => {
-                  return <li key={index}>{tools}</li>;
+                  return <li key={index}><img src={tools} alt="Tool" /></li>;
                 })}
               </ul>
             </article>

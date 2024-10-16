@@ -16,7 +16,7 @@
   gap: 10px;
 }
 .about-text-container h3 {
-  color: #8ca7db;
+  color: #e164ff;
 }
 .about-text-container p {
   color: #aaa;
@@ -30,6 +30,10 @@
   flex-direction: column;
   gap: 5px;
 }
+.about-skills-container h2{
+    margin-top: 5px;
+    color: #8ca7db;
+}
 .about-skills-container h3 {
-  color: #8ca7db;
+  color: #e164ff;
 }
