@@ -1,0 +1,35 @@
+.about-title {
+  color: #8ca7db;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #8ca7db;
+  width: fit-content;
+  padding-bottom: 2.5px;
+}
+.about-container {
+  padding: 40px 20px 20px;
+}
+.about-text-container {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about-text-container h3 {
+  color: #8ca7db;
+}
+.about-text-container p {
+  color: #aaa;
+  font-weight: 600;
+  font-size: 0.875em;
+}
+
+.about-skills-container {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.about-skills-container h3 {
+  color: #8ca7db;
+}
