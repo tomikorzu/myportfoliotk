@@ -36,7 +36,6 @@ const About = () => {
             </article>
           </section>
           <section className="about-skills-container">
-            <h2>My Skills</h2>
             <article>
               <h3>Programming skillset</h3>
               <ul>

@@ -6,6 +6,7 @@ import python from "../assets/img/programming-svg/python.svg";
 import react from "../assets/img/programming-svg/react.svg";
 import jquery from "../assets/img/programming-svg/jquery.svg";
 import node from "../assets/img/programming-svg/node.svg";
+import express from "../assets/img/programming-svg/express.svg";
 import socketio from "../assets/img/programming-svg/socketio.svg";
 import git from "../assets/img/programming-svg/git.svg";
 import github from "../assets/img/programming-svg/github.svg";
@@ -72,7 +73,7 @@ const skillsSet = {
     {
       name: "Express",
       url: "https://expressjs.com/",
-      img: "",
+      img: express,
     },
     {
       name: "Node.js",

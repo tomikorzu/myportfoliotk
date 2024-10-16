@@ -36,6 +36,8 @@
 }
 .about-skills-container h3 {
   color: #e164ff;
+  text-align: center;
+  font-size: 1.5em;
 }
 .about-skills-container ul {
   margin: 20px 0;
@@ -62,6 +64,7 @@
   transition: all 0.4s;
 }
 .about-skills-container img {
+    transition: all 0.4s;
   width: 50px;
   filter: invert(85%) sepia(100%) saturate(500%) hue-rotate(220deg)
     brightness(90%) contrast(90%);
@@ -74,9 +77,13 @@
 @media (min-width: 1024px) {
   .about-skills-container li:hover {
     background-color: #612f64;
-    width: 175px;
-    height: 175px;
+    /* width: 175px;
+    height: 175px; */
     color: #fff;
     border-color: #fff;
+  }
+  .about-skills-container li:hover img {
+    filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(220deg)
+      brightness(90%) contrast(90%);
   }
 }
